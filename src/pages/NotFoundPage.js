@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ListPage = () => {
+const NotFoundPage = () => {
     return (
         <div>
-            List
+            NotFound
         </div>
     );
 };
 
-export default ListPage;
+export default NotFoundPage;
