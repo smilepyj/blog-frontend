@@ -9,7 +9,7 @@ const PostInfo = () => (
         <div className={cx('info')}>
             <h1>타이틀</h1>
             <div className={cx('tags')}>
-                <a>#태그</a> <a>#태그</a> <a>#태그</a>
+                #태그 #태그 #태그
             </div>
             <div className={cx('date')}>March 19, 2019</div>
         </div>

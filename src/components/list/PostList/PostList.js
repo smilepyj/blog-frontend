@@ -1,20 +1,18 @@
 import React from 'react';
 import styles from './PostList.scss';
 import classNames from 'classnames/bind';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
 const PostItem = () => {
     return (
         <div className={cx('post-item')}>
-            <h2><a>타이틀</a></h2>
+            <h2>타이틀</h2>
             <div className={cx('date')}>2019-03-19</div>
             <p>내용</p>
             <div className={cx('tags')}>
-                <a>#태그</a>
-                <a>#태그</a>
-                <a>#태그</a>
+                #태그 #태그 #태그
             </div>
         </div>
     );

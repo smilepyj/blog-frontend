@@ -6,7 +6,7 @@ import marked from 'marked';
 
 // prism 관련 코드 불러오기
 import Prism from 'prismjs';
-//import 'prismjs/themes/prism-okaidia.css';
+import 'prismjs/themes/prism-okaidia.css';
 // 지원할 코드 형식들을 불러옵니다.
 // http://prismjs.com/#languages-list 참조
 import 'prismjs/components/prism-bash.min.js';
@@ -69,8 +69,13 @@ class MarkdownRender extends Component {
 
         // 그리고 dangerouslySetInnerHTML 값에 해당 객체를 넣어 주면 됩니다.
         return (
-            <div className={cx('markdown-render', 'dracula')}>
-                <div dangerouslySetInnerHTML={markup} />
+            <div className={cx('markdown-render', 'github')}>
+                <div
+                    ref={(ref) => {
+                        this.htmlDiv = ref;
+                    }}
+                    dangerouslySetInnerHTML={markup}
+                />
             </div>
         );
     }
